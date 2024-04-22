@@ -1,0 +1,9 @@
+# docker-compose.yml
+services:
+  flask-dev:
+    build:
+      context: .
+    image: "python-flask"
+    ports:
+      - "5002:5000"
+      - "5678:5678"
